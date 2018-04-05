@@ -1,0 +1,8 @@
+.menuBarContainer {
+  height: 60px;
+  background-color: blue;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 150px 150px 150px 150px;
+  grid-gap: 20px;
+}
