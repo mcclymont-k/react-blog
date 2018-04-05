@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class Gallery extends Component {
   constructor() {
     super()
@@ -8,10 +9,8 @@ class Gallery extends Component {
 
   componentDidMount() {
     const digits = Array.from({ length: 50}, () =>
-      [this.randomNumber(4), this.randomNumber(4)])
+      [this.randomNumber(4), this.randomNumber(4)]).concat([[1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1], [1,1]])
     this.setState({digits: digits})
-
-
   }
 
   randomNumber(limit) {
@@ -23,9 +22,18 @@ class Gallery extends Component {
 
   render () {
     return(
-      <div>
-        {console.log(this.state.digits)}
-        Gallery
+      <div className='galleryContainer'>
+        {
+          this.state.digits
+          ? this.state.digits.map(([h, v]) =>
+            <div className= {`item  h${h} v${v}`}>
+              <img src={require(`../Images/${this.randomNumber(8)}.jpg`)} />
+              <div className='itemOverlay'>
+                <button>View ></button>
+              </div>
+            </div>
+          ): ""
+        }
       </div>
     )
   }
