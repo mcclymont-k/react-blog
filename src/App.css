@@ -5,6 +5,14 @@
   display: grid;
   grid-template-columns: 1fr 150px 150px 150px 150px;
   grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+  position: fixed;
+}
+
+.menuBarContainer .logo {
+  justify-self: flex-start;
+  padding-left: 50px;
 }
 
 .item {
@@ -62,7 +70,6 @@
 
 .galleryContainer {
   width: 80vw;
-  max-height: 900px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, 100px);
@@ -82,8 +89,8 @@
 }
 
 .overlayImage {
-  width: 400px;
-  height: 600px;
+  width: 600px;
+
   object-fit: cover;
 }
 
@@ -93,16 +100,17 @@
   border: 2px solid white;
   color: white;
   padding: 5px;
+  font-size: 10px;
 }
 
 .imageCloseButton {
-  width: 100px;
+  width: 80px;
   background-color: rgba(0,0,0,0.7);
   border: 2px solid white;
   color: white;
   padding: 5px;
   position: absolute;
-  margin: 20px;
+  margin: 40px;
   top: 0;
 }
 
@@ -110,4 +118,23 @@
   display: grid;
   align-items: center;
   justify-content: center;
+}
+
+.aboutContainer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  width: 80vw;
+  margin: auto;
+}
+
+.blogContainer {
+  border: 1px solid black;
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 1200px;
+  width: 80vw;
+  margin: auto;
 }

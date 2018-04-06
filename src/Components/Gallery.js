@@ -39,14 +39,14 @@ class Gallery extends Component {
           <button onClick={this.close} className='imageCloseButton'>Close x</button>
           <img className='overlayImage' />
         </div>
-        <div className='galleryContainer'>
+        <div className='galleryContainer' >
           {
             this.state.digits
             ? this.state.digits.map(([h, v]) =>
               <div className= {`item  h${h} v${v}`} onClick={this.handleClick}>
                 <img src={require(`../Images/${this.randomNumber(12)}.jpg`)} />
                 <div className='itemOverlay'>
-                  <button className="itemOverlayButton">View ></button>
+                  <button className="itemOverlayButton">VIEW -></button>
                 </div>
             </div>
           ): ""
