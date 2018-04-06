@@ -4,7 +4,7 @@ import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy,
 class MenuBar extends Component {
 
   smoothScroll(e) {
-    let selector = e.currentTarget.className
+    let selector = e.currentTarget.id
     let classSelector = '.' + selector + 'Container'
     let destination = document.querySelector(classSelector).offsetTop
     scroll.scrollTo(destination - 100)
@@ -22,10 +22,10 @@ class MenuBar extends Component {
     return(
       <div className='menuBarContainer'>
         <div className='logo'>LOGO</div>
-        <div className='about' onClick={this.smoothScroll}>About</div>
-        <div className='gallery' onClick={this.smoothScroll}>Gallery</div>
-        <div className='blog' onClick={this.smoothScroll}>BLOG</div>
-        <div>Contact</div>
+        <div id='about' className='menuBarButton' onClick={this.smoothScroll}>About</div>
+        <div id='gallery' className='menuBarButton' onClick={this.smoothScroll}>Gallery</div>
+        <div id='blog' className='menuBarButton' onClick={this.smoothScroll}>BLOG</div>
+        <div className='menuBarButton'>Contact</div>
       </div>
     )
   }

@@ -8,12 +8,30 @@
   align-items: center;
   justify-items: center;
   position: fixed;
+  background-color: grey;
+  color: white;
+  z-index: 2;
 }
 
 .menuBarContainer .logo {
   justify-self: flex-start;
   padding-left: 50px;
+
 }
+
+
+.menuBarButton {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  box-shadow: 5px 5px rgba(0,0,0, 0.3);
+  color: white;
+  border: 2px solid black
+}
+
+.menuBarButton:hover {
+  cursor: pointer;
+}
+
 
 .item {
   overflow: hidden;
