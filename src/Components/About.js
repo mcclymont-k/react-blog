@@ -18,7 +18,7 @@ class About extends Component {
             <h1>Meditation Timer</h1>
             <h2>This application allows you to time your daily meditations and save the information.
             It gives you audio reminders at selected intervals and helps you to track and maintain a regular practice.
-            Check it out <a href="">here</a>
+            Check it out <a href="https://meditation-timer-app.herokuapp.com/">here</a>
             </h2>
           </div>
           <div>
@@ -29,7 +29,7 @@ class About extends Component {
             <h2>This application helps encourage people to collaborate through anonymous brainstorming.
             The idea is to relieve the pressure of peer judgement and allow the free flow of ideas in a team.
             Each collaborator can add ideas to the brainstorm tree without identification allowing for the wildest
-             and wackiest flow of thoughts. Check it out <a href="">here</a>
+             and wackiest flow of thoughts. Check it out <a href="https://brainstorm-anon.herokuapp.com/">here</a>
             </h2>
           </div>
           <div>
