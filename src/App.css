@@ -1,14 +1,20 @@
+
+:root {
+  --lightBlue: #00a1f1;
+  --lighterBlue: #84caf0;
+  --greyOverlay: rgba(100, 100, 100, 0.3);
+}
+
 .menuBarContainer {
   height: 60px;
-  background-color: blue;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 150px 150px 150px 150px;
-  grid-gap: 20px;
+  grid-gap: 10px;
   align-items: center;
   justify-items: center;
   position: fixed;
-  background-color: #949491;
+  background-color: #666662;
   color: white;
   z-index: 2;
   top: 0;
@@ -21,14 +27,16 @@
 
 
 .menuBarButton {
-  color: #3c3707;
-  transition: 0.5s;
+  color: white;
+  transition: 0.2s;
   padding: 3px 10px 3px 10px ;
   user-select: none;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .menuBarButton:hover {
-  color: white;
+  color: orange;
   transform-origin: center;
   border: none;
 }
@@ -57,7 +65,7 @@
 }
 
 .itemOverlay {
-  background-color: rgba(100, 100, 100, 0.3);
+  background-color: var(--greyOverlay);
   grid-row: 1 / -1;
   grid-column: 1 /-1;
   transform: translateY(100%);
@@ -93,6 +101,7 @@
 .galleryContainer {
   width: 80vw;
   margin: auto;
+  margin-bottom: 1000px;
   display: grid;
   grid-template-columns: repeat(auto-fit, 100px);
   grid-auto-rows: 100px;
@@ -146,10 +155,11 @@
 .aboutContainer {
   width: 80vw;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 1000px;
 }
 
 .aboutTitle {
+  color: white;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 400px 1fr;
@@ -162,21 +172,32 @@
   margin-bottom: 30px;
   min-width: 720px;
   padding: 10px;
-  background-color: lightgrey;
+  background-color: #94949199;
   transition: color 0.3s;
 }
 
-.aboutTitle:hover {
-  color: white;
+.aboutTitle h3 {
+  font-size: inherit;
+  display: inline;
+  transition: 0.3s;
+}
+
+.aboutTitle:hover h3{
+  color: #4a91bf;
 }
 
 .aboutText h1 {
-  font-size: 0.7fr;
+  font-size: 25px;
+}
+
+.aboutText h2 {
+  font-weight: bold;
 }
 
 .aboutText {
   text-align: center;
 }
+
 
 .aboutImage {
   width: 100%;
@@ -185,14 +206,26 @@
 .projectContainer {
   display: grid;
   grid-template-columns: 1fr 0.5fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.projectContainer a {
+  text-decoration: none;
+  color: orange;
 }
 
 .projectContainer h1 {
   font-size: 15px;
+  color: var(--lightBlue);
 }
 
 .projectContainer h2 {
-  font-size: 10px;
+  font-size: 12px;
+}
+
+.projectImage {
+  width: 100px;
 }
 
 .blogContainer {
@@ -203,11 +236,18 @@
   min-height: 1200px;
   width: 80vw;
   margin: auto;
+  margin-bottom: 1000px;
 }
 
 .contactContainer {
   width: 80vw;
   margin:auto;
   border: 1px solid black;
-  min-height: 500px;
+  min-height: 1000px;
+  text-align: center;
+}
+
+.socialButton {
+  width: 30px;
+  margin: 10px;
 }

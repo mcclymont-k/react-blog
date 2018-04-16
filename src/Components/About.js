@@ -7,8 +7,8 @@ class About extends Component {
         <div className='aboutTitle'>
           <img className='aboutImage' src={require("../Images/kieran.jpg" )} />
           <div className='aboutText'>
-            <h1>Hi, my name is Kieran, I design and develop applications for the web.</h1><br/><br/>
-            Please check out my projects, personal photography gallery and blog posts
+            <h1>Hi, my name is <h3>Kieran</h3><br/><br/>I <h3>design</h3> and <h3>develop</h3> applications for the web.</h1><br/><br/>
+            Please check out my <h3>projects</h3>, personal photography <h3>gallery</h3> and <h3>blog</h3> posts
             below.<br/><br/> Use the contact section to get in
             contact regarding work or talking oppurtunities.
           </div>
@@ -22,7 +22,7 @@ class About extends Component {
             </h2>
           </div>
           <div>
-            Image
+            <a href="https://meditation-timer-app.herokuapp.com/"><img className='projectImage' src={require('../Images/meditation.jpg')} /></a>
           </div>
           <div>
             <h1>Brainstorm-anon</h1>
@@ -33,11 +33,9 @@ class About extends Component {
             </h2>
           </div>
           <div>
-            Image
+            <a href='https://brainstorm-anon.herokuapp.com/'><img className='projectImage' src={require('../Images/brainstorming.png')} /></a>
           </div>
         </div>
-        <div>Project 2</div>
-        <div>Project 3</div>
       </div>
     )
   }

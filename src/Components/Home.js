@@ -14,7 +14,13 @@ class Home extends Component {
         <Gallery />
         <Blog />
         <div className='contactContainer'>
-          <h1>Contact details etc.....</h1>
+          <h1>Contact</h1>
+          <h2>
+            Please feel free to get in contact.<br/>I am eager to hear about speaking engagements, open source projects and work oppurtunities.
+          </h2>
+          <h3>email: mcclymont.kieran@gmail.com </h3>
+          <a href="https://twitter.com/KieMccl?ref_src=twsrc%5Etfw"><img className='socialButton' src={require('../Images/twit.png')} /></a>
+          <a href=""><img className='socialButton' src={require('../Images/insta.png')} /></a>
         </div>
       </div>
     )
