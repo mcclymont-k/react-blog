@@ -27,8 +27,6 @@ class Gallery extends Component {
 
   close() {
     let overlay = document.querySelector('.mainOverlay')
-    console.log(overlay)
-    console.log(overlay.classList)
     overlay.classList.remove('mainOverlayOpen')
   }
 
@@ -41,6 +39,7 @@ class Gallery extends Component {
         </div>
         <div className='galleryContainer' >
           {
+            // Checking that state has been updated before iterating through the images 
             this.state.digits
             ? this.state.digits.map(([h, v]) =>
               <div className= {`item  h${h} v${v}`} onClick={this.handleClick}>

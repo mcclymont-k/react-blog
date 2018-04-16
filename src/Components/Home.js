@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MenuBar from './MenuBar'
 import Gallery from './Gallery'
 import Blog from './Blog'
+import About from './About'
 
 class Home extends Component {
 
@@ -9,9 +10,12 @@ class Home extends Component {
     return(
       <div>
         <MenuBar />
-        <section className='aboutContainer'>About</section>
+        <About />
         <Gallery />
-        <Blog className='blogContainer' />
+        <Blog />
+        <div className='contactContainer'>
+          <h1>Contact details etc.....</h1>
+        </div>
       </div>
     )
   }
