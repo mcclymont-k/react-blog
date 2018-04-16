@@ -171,6 +171,7 @@
   margin-top: 100px;
   margin-bottom: 30px;
   min-width: 720px;
+  max-width: 1200px;
   padding: 10px;
   background-color: #94949199;
   transition: color 0.3s;
@@ -208,10 +209,17 @@
   grid-template-columns: 1fr 0.5fr;
   justify-items: center;
   align-items: center;
+  max-width: 960px;
+  margin: auto;
 }
 
 .projectContainer a {
   text-decoration: none;
+  color: black;
+
+}
+
+.projectContainer a:hover {
   color: orange;
 }
 

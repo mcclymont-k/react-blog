@@ -7,9 +7,9 @@ class About extends Component {
         <div className='aboutTitle'>
           <img className='aboutImage' src={require("../Images/kieran.jpg" )} />
           <div className='aboutText'>
-            <h1>Hi, my name is <h3>Kieran</h3><br/><br/>I <h3>design</h3> and <h3>develop</h3> applications for the web.</h1><br/><br/>
+            <h1>Hi, my name is <h3>Kieran</h3><br/><br/>I <h3>design</h3> and <h3>develop</h3> applications for the web</h1><br/><br/>
             Please check out my <h3>projects</h3>, personal photography <h3>gallery</h3> and <h3>blog</h3> posts
-            below.<br/><br/> Use the contact section to get in
+            below.<br/><br/> Use the <h3>contact</h3> section to get in
             contact regarding work or talking oppurtunities.
           </div>
         </div>
