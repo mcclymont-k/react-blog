@@ -1,0 +1,38 @@
+.menuBarContainer {
+  height: 50px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-gap: 10px;
+  position: fixed;
+  background-color: #050404;
+  color: white;
+  z-index: 2;
+  top: 0;
+  opacity: 0.8;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuBarContainer .logo {
+  position: absolute;
+  padding-left: 50px;
+  left: 0
+}
+
+.menuBarButton {
+  color: white;
+  transition: 0.2s;
+  padding: 3px 10px 3px 10px ;
+  user-select: none;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.menuBarButton:hover {
+  color: #00a1f1;
+  transform-origin: center;
+  border: none;
+  cursor: pointer
+}

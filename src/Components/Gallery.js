@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../Css/Gallery.css'
 
 
 class Gallery extends Component {
@@ -39,7 +40,7 @@ class Gallery extends Component {
         </div>
         <div className='galleryContainer' >
           {
-            // Checking that state has been updated before iterating through the images 
+            // Checking that state has been updated before iterating through the images
             this.state.digits
             ? this.state.digits.map(([h, v]) =>
               <div className= {`item  h${h} v${v}`} onClick={this.handleClick}>
