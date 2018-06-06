@@ -8,7 +8,6 @@
   color: white;
   z-index: 2;
   top: 0;
-  opacity: 0.8;
   align-items: center;
   justify-content: center;
   z-index: 2
@@ -64,4 +63,8 @@
   margin: 0;
   text-align: center;
   height: 10px
+}
+
+.logo:hover {
+  cursor: pointer
 }

@@ -1,7 +1,6 @@
 .experienceContainer {
   width: 80%;
   margin: 0 auto;
-  height: 100vh;
 }
 
 .experienceContainer h1 {
@@ -46,4 +45,28 @@
 
 .individualLogo:hover h2 {
   color: white
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  max-width:978px;
+  margin: 76px auto
+}
+
+.individualProject {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 300px 20px 1fr
+}
+
+.individualProject img {
+  width: 100%;
+  height:100%;
+  object-fit: contain
+}
+
+.individualProject h1 {
+  margin: 0
 }

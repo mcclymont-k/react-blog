@@ -7,12 +7,17 @@ const logo = require('../Images/logo.png')
 class MenuBar extends Component {
 
   smoothScroll(e) {
-    let selector = e.currentTarget.id
+  // This is allowing for the use of the logo to return to page top
+    let selector
+    e.currentTarget.id
+    ? selector = e.currentTarget.id
+    : selector = 'about'
+  // Uses id to locate the scroll location no matter the screen height
     let classSelector = '.' + selector + 'Container'
     let destination = document.querySelector(classSelector).offsetTop
     scroll.scrollTo(destination - 100)
   }
-
+  
   scrollTo() {
     scroller.scrollTo('scroll-to-element', {
       duration: 800,
@@ -24,7 +29,7 @@ class MenuBar extends Component {
   render () {
     return(
       <div className='menuBarContainer'>
-        <div className='logo'>
+        <div className='logo' onClick={this.smoothScroll}>
           <img src={logo}/>
           <h1>K_McC</h1>
         </div>
