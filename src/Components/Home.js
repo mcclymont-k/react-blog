@@ -3,14 +3,33 @@ import MenuBar from './MenuBar'
 import Gallery from './Gallery'
 import Blog from './Blog'
 import About from './About'
+import Experience from './Experience'
 
 class Home extends Component {
 
+  componentDidMount() {
+    let scrollTimer
+
+    window.onscroll = function(e) {
+      clearTimeout(scrollTimer)
+      let targets = document.querySelectorAll('.menuBarButton')
+      scrollTimer = window.setTimeout(() =>
+        targets.forEach(target =>
+          target.style.transform = 'translate(0, 0)'
+        ), 1000)
+      targets.forEach( target => {
+        target.style.transform = 'translate(0, -100px)'
+      })
+
+
+    }
+  }
   render () {
     return(
       <div>
         <MenuBar />
         <About />
+        <Experience />
         <Gallery />
         <Blog />
         <div className='contactContainer'>
