@@ -5,7 +5,9 @@
   --greyOverlay: rgba(100, 100, 100, 0.3);
 }
 
-
+body {
+  background-color: #414246
+}
 
 .projectContainer {
   display: grid;
