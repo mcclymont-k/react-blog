@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import '../Css/MenuBar.css'
+
+const logo = require('../Images/logo.png')
+
 class MenuBar extends Component {
 
   smoothScroll(e) {
@@ -21,7 +24,10 @@ class MenuBar extends Component {
   render () {
     return(
       <div className='menuBarContainer'>
-        <div className='logo'>LOGO</div>
+        <div className='logo'>
+          <img src={logo}/>
+          <h1>K_McC</h1>
+        </div>
         <div id='about' className='menuBarButton' onClick={this.smoothScroll}>ABOUT</div>
         <div id='gallery' className='menuBarButton' onClick={this.smoothScroll}>GALLERY</div>
         <div id='blog' className='menuBarButton' onClick={this.smoothScroll}>BLOG</div>

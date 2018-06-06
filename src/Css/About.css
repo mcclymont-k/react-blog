@@ -19,48 +19,6 @@
 
 }
 
-.aboutTitle {
-  color: white;
-  display: grid;
-  grid-template-columns: 400px 1fr;
-  align-items: center;
-  justify-content: center;
-  min-height: 400px;
-  width: 80vw;
-  margin: auto;
-  min-width: 720px;
-  max-width: 1200px;
-  background-color: #94949199;
-  transition: color 0.3s;
-}
-
-.aboutTitle h3 {
-  font-size: inherit;
-  display: inline;
-  transition: 0.3s;
-}
-
-.aboutTitle:hover h3{
-  color: #4a91bf;
-}
-
-.aboutText h1 {
-  font-size: 25px;
-}
-
-.aboutText h2 {
-  font-weight: bold;
-}
-
-.aboutText {
-  text-align: center;
-}
-
-
-.aboutImage {
-  width: 100%;
-}
-
 .aboutContent {
   color: white;
   display: grid;
@@ -80,7 +38,8 @@
 }
 
 .aboutContent h1 {
-  font-size: 39px;
+  font-size: 50px;
+  font-weight: normal;
   margin: 0;
   font-family: 'Lobster', cursive;
 }

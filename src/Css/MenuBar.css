@@ -14,12 +14,6 @@
   z-index: 2
 }
 
-.menuBarContainer .logo {
-  position: absolute;
-  padding-left: 50px;
-  left: 0
-}
-
 .menuBarButton {
   color: white;
   transition: 0.2s;
@@ -48,4 +42,26 @@
 
 .menuBarButton:hover::after {
   width: 100%;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-color: white;
+  width: 40px;
+  height: 59px;
+  border-radius: 3px
+}
+
+.logo img {
+  height: 40px
+}
+
+.logo h1 {
+  font-size: 9px;
+  color: orange;
+  margin: 0;
+  text-align: center;
+  height: 10px
 }

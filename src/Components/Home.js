@@ -16,7 +16,7 @@ class Home extends Component {
       scrollTimer = window.setTimeout(() =>
         targets.forEach(target =>
           target.style.transform = 'translate(0, 0)'
-        ), 1000)
+        ), 500)
       targets.forEach( target => {
         target.style.transform = 'translate(0, -100px)'
       })
