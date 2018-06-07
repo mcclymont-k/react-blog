@@ -61,43 +61,49 @@ class Experience extends Component {
           </div>
         </div>
         <div className='projectsContainer'>
-          <div className='individualProject'>
+          <div className='individualProject' onClick={e => window.location.href = 'https://old-growth.herokuapp.com/'}>
             <img src={oldGrowthImage} alt='project image'/>
             <h1>old growTh</h1>
             <h2>
-              Project info and other stuff blah blah blah more stuff and other
-              things in here about this project and what it uses
+              old growTh is a website deidcated to educating people on old growth forests.
+              It provides information, educational content and DIY help on building your
+              own small scale forest.<br/>
+              The project uses:<br/>
+              - JS, React, HTML, CSS<br/>
+              - Redux for state management<br/>
+              - d3 data visulaisation<br/>
+              - Firebase as the serverless database
             </h2>
           </div>
-          <div className='individualProject'>
+          <div className='individualProject' onClick={e => window.location.href = 'https://carey-store.herokuapp.com'}>
             <img src={careyStoreImage} alt='project image'/>
             <h1>Creativity by design</h1>
             <h2>
               Project info and other stuff blah blah blah
             </h2>
           </div>
-          <div className='individualProject'>
+          <div className='individualProject' onClick={e => window.location.href = 'https://brainstorm-anon-frontend.herokuapp.com'}>
             <img src={brainstormImage} alt='project image'/>
             <h1>Brainstorm anon</h1>
             <h2>
               Project info and other stuff blah blah blah
             </h2>
           </div>
-          <div className='individualProject'>
+          <div className='individualProject' onClick={e => window.location.href = 'https://keen-thompson-275e39.netlify.com'}>
             <img src={d3Project1Image} alt='project image'/>
             <h1>d3 data-vistualisation 1</h1>
             <h2>
               Project info and other stuff blah blah blah
             </h2>
           </div>
-          <div className='individualProject'>
+          <div className='individualProject' onClick={e => window.location.href = 'https://meditation-timer-app.herokuapp.com'}>
             <img src={meditationAppImage} alt='project image'/>
             <h1>Meditation Timer</h1>
             <h2>
               Project info and other stuff blah blah blah
             </h2>
           </div>
-          <div className='individualProject'>
+          <div className='individualProject' onClick={e => window.location.href = 'https://d3-graphs.herokuapp.com/'}>
             <img src={d3Project2Image} alt='project image'/>
             <h1>d3 data-visualisation 2</h1>
             <h2>
