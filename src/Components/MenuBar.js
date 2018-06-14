@@ -17,7 +17,7 @@ class MenuBar extends Component {
     let destination = document.querySelector(classSelector).offsetTop
     scroll.scrollTo(destination - 100)
   }
-  
+
   scrollTo() {
     scroller.scrollTo('scroll-to-element', {
       duration: 800,
@@ -34,8 +34,9 @@ class MenuBar extends Component {
           <h1>K_McC</h1>
         </div>
         <div id='about' className='menuBarButton' onClick={this.smoothScroll}>ABOUT</div>
-        <div id='gallery' className='menuBarButton' onClick={this.smoothScroll}>GALLERY</div>
+        <div id='experience' className='menuBarButton' onClick={this.smoothScroll}>WORK</div>
         <div id='blog' className='menuBarButton' onClick={this.smoothScroll}>BLOG</div>
+        <div id='gallery' className='menuBarButton' onClick={this.smoothScroll}>GALLERY</div>
         <div id='contact' className='menuBarButton' onClick={this.smoothScroll}>CONTACT</div>
       </div>
     )

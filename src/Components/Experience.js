@@ -73,7 +73,7 @@ class Experience extends Component {
             <h2>
               old growTh is a website deidcated to educating people on old growth forests.
               It provides information, educational content and DIY help on building your
-              own small scale forest.<br/>
+              own small scale forest.<br/><br/>
               The project uses:<br/>
               - JS, React, HTML, CSS<br/>
               - Redux for state management<br/>
@@ -85,35 +85,62 @@ class Experience extends Component {
             <img src={careyStoreImage} alt='project image'/>
             <h1>Creativity by design</h1>
             <h2>
-              Project info and other stuff blah blah blah
+              Creativity by design is a portfolio website for a minnesota based designer.
+              It was a  freelance project I continue to maintain.<br/><br/>
+              The project uses:<br/>
+              - JS, Vue, HTML, Css<br/>
+              - SquareUp backend, Node and express
             </h2>
           </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://brainstorm-anon-frontend.herokuapp.com'}>
             <img src={brainstormImage} alt='project image'/>
             <h1>Brainstorm anon</h1>
             <h2>
-              Project info and other stuff blah blah blah
+              Brainstorm anon is an applciation where people can brainstorm and save their changes to the cloud anonymously.
+              The ides is to allow people to give ideas on projects without the fear of peer judgement.<br/><br/>
+              The application uses:<br/>
+              - JS, Vue.js, HTML, CSS <br/>
+              - Node.js with express<br/>
+              - MongoDB and mongoose
             </h2>
           </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://keen-thompson-275e39.netlify.com'}>
             <img src={d3Project1Image} alt='project image'/>
             <h1>d3 data-vistualisation 1</h1>
             <h2>
-              Project info and other stuff blah blah blah
+              This project presents data visulaisation examples using d3. The data
+              is being pulled from the random user data api and presented in three
+              different ways.<br/><br/>
+              This application uses:<br/>
+              - JS, React, HTML, CSS<br/>
+              - d3 data visualisation
             </h2>
           </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://meditation-timer-app.herokuapp.com'}>
             <img src={meditationAppImage} alt='project image'/>
             <h1>Meditation Timer</h1>
             <h2>
-              Project info and other stuff blah blah blah
+              Meditation Timer is an application for timing meditation sessions,
+              recording your times and recording those times to a database. It has
+              A digital timer as well as options for audio reminders in changeable increments.
+              The application presents your meditation history in text and graph form. The application
+              also has an article section. <br/><br/>
+              This application uses:<br/>
+              - JS, React, HTML, CSS<br/>
+              - Firebase, as a serverless database<br/>
+
             </h2>
           </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://d3-graphs.herokuapp.com/'}>
             <img src={d3Project2Image} alt='project image'/>
             <h1>d3 data-visualisation 2</h1>
             <h2>
-              Project info and other stuff blah blah blah
+              This project presents data visulaisation examples using d3. It uses
+              randomly generated data as well as data pulled from APIs for the
+              visualisations<br/><br/>
+              This application uses:<br/>
+              - JS, React, HTML, CSS
+              - d3 data visualisation
             </h2>
           </div>
         </div>

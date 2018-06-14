@@ -1,8 +1,16 @@
 import React, { Component } from 'react'
 import '../Css/About.css'
 let kieran = require('../Images/kieran.jpg')
+let giphy = require('../Images/giphy.gif')
+let tech = require('../Images/tech.gif')
 
 class About extends Component {
+
+  componentDidMount() {
+    setTimeout(() => {
+      document.querySelector('#gif').src = giphy
+    }, 10000)
+  }
   render () {
     return(
       <div className='aboutContainer'>
@@ -16,7 +24,7 @@ class About extends Component {
             machine learning using TensorFlow. Check out my projects below for examples
             of my work.
           </h2>
-          <img src={kieran}></img>
+          <img id='gif' src={tech}></img>
         </div>
       </div>
     )

@@ -31,10 +31,11 @@
 }
 
 .aboutContent img {
-  width: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50px;
   opacity: 1;
-  margin-top: 50px
+  margin-top: 153px;
 }
 
 .aboutContent h1 {
