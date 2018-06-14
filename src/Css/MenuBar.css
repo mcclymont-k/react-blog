@@ -23,6 +23,7 @@
   text-align: center;
   border-radius: 5px;
   padding: 5px;
+  font-size: 13px
 }
 
 .menuBarButton::after {
@@ -48,17 +49,17 @@
   left: 20px;
   top: 20px;
   background-color: white;
-  width: 40px;
-  height: 59px;
+  width: 32px;
+  height: 48px;
   border-radius: 3px
 }
 
 .logo img {
-  height: 40px
+  height: 32px
 }
 
 .logo h1 {
-  font-size: 9px;
+  font-size: 7px;
   color: orange;
   margin: 0;
   text-align: center;

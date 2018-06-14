@@ -27,19 +27,19 @@
   justify-items: center;
   grid-gap: 20px;;
   z-index: 2;
-  width: 400px
+  width: 325px
 }
 
 .aboutContent img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50px;
   opacity: 1;
   margin-top: 153px;
 }
 
 .aboutContent h1 {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: normal;
   margin: 0;
   font-family: 'Lobster', cursive;
@@ -47,7 +47,7 @@
 
 .aboutContent h2 {
   justify-self: flex-start;
-  font-size: 12px;
+  font-size: 10px;
   margin: 0;
   text-align: justify;
   text-justify: auto
