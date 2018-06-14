@@ -54,7 +54,7 @@
 .galleryContainer {
   width: 80vw;
   margin: auto;
-  margin-bottom: 1000px;
+  margin-bottom: 200px;
   display: grid;
   grid-template-columns: repeat(auto-fit, 100px);
   grid-auto-rows: 100px;

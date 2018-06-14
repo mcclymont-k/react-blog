@@ -30,8 +30,8 @@ class Home extends Component {
         <MenuBar />
         <About />
         <Experience />
-        <Gallery />
         <Blog />
+        <Gallery />
         <div className='contactContainer'>
           <h1>Contact</h1>
           <h2>

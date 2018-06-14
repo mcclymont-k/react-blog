@@ -44,12 +44,13 @@ body {
 .contactContainer {
   width: 80vw;
   margin:auto;
-  border: 1px solid black;
   min-height: 1000px;
   text-align: center;
+  color: white
 }
 
 .socialButton {
   width: 30px;
   margin: 10px;
+  filter: invert(100%)
 }

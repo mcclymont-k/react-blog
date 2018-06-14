@@ -10,12 +10,14 @@ const htmlLogo = require('../Images/html5.png')
 const nodeLogo = require('../Images/node.png')
 const tfLogo = require('../Images/tensorflow.png')
 const vueLogo = require('../Images/vue.png')
+const pythonLogo = require('../Images/python.png')
 const oldGrowthImage = require('../Images/oldGrowth.png')
 const careyStoreImage = require('../Images/careyStore.png')
 const brainstormImage = require('../Images/brainstorm.png')
 const d3Project1Image = require('../Images/d3Project1.png')
 const d3Project2Image = require('../Images/d3Project2.png')
 const meditationAppImage = require('../Images/meditationApp.png')
+
 
 class Experience extends Component {
   render() {
@@ -59,9 +61,13 @@ class Experience extends Component {
             <img className='techLogo' src={tfLogo}/>
             <h2>TensorFlow</h2>
           </div>
+          <div className='individualLogo'>
+            <img className='techLogo' src={pythonLogo}/>
+            <h2>Python</h2>
+          </div>
         </div>
         <div className='projectsContainer'>
-          <div className='individualProject' onClick={e => window.location.href = 'https://old-growth.herokuapp.com/'}>
+          <div className='individualProject' onClick={e => window.location.href = 'https://awesome-lalande-485e6e.netlify.com/'}>
             <img src={oldGrowthImage} alt='project image'/>
             <h1>old growTh</h1>
             <h2>

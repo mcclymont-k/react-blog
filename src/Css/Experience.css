@@ -52,7 +52,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 100px;
   max-width:978px;
-  margin: 76px auto
+  margin: 76px auto 200px auto
 }
 
 .individualProject {

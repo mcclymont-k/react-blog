@@ -1,11 +1,12 @@
 
 .blogContainer {
-  border: 1px solid black;
+  border: 1px solid white;
   display:grid;
   align-items: center;
   justify-content: center;
   min-height: 1200px;
   width: 80vw;
   margin: auto;
-  margin-bottom: 1000px;
+  margin-bottom: 200px;
+  color: white
 }
