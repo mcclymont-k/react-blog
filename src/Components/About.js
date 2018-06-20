@@ -9,7 +9,7 @@ class About extends Component {
   componentDidMount() {
     setTimeout(() => {
       document.querySelector('#gif').src = giphy
-    }, 10000)
+    }, 15000)
   }
   render () {
     return(
