@@ -58,7 +58,7 @@
 .individualProject {
   display: grid;
   justify-items: center;
-  align-items: center;
+  align-items go: center;
   grid-template-rows: 300px 20px 1fr;
   cursor: pointer;
 }

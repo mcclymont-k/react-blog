@@ -12,7 +12,7 @@ class Blog extends Component {
   state = {
     centreArticle: {
       title: 'Blog posts',
-      article: 'Click on some stuff to read more'
+      articleSection1: 'Scroll through the side bar to find articles on an array of technical subjects.'
     },
     articles: []
   }
@@ -33,15 +33,16 @@ class Blog extends Component {
     return(
       <div className='blogContainer'>
         <div className='sideBar'>
-          {
-            this.state.articles.map(article =>
-              <div className='articleBlurb' onClick={e => this.setState({ centreArticle: article})}>
-                <img src={eval(article.image1)}></img>
-                <h1>
-                  {article.title}
-                </h1>
-              </div>
-            )
+          {this.state.articles.length < 1
+            ? []
+            : this.state.articles.map((article, i) =>
+                <div className='articleBlurb' key={i} onClick={e => this.setState({ centreArticle: article})}>
+                  <img src={eval(article.image1)}></img>
+                  <h1>
+                    {article.title}
+                  </h1>
+                </div>
+              )
           }
         </div>
         <div className='articleReader'>
@@ -50,6 +51,8 @@ class Blog extends Component {
           <img src={eval(this.state.centreArticle.image1)} alt=''/>
           <h2>{this.state.centreArticle.articleSection2}</h2>
           <img src={eval(this.state.centreArticle.image2)} alt=''/>
+          <h2>{this.state.centreArticle.articleSection3}</h2>
+          <h2>{this.state.centreArticle.suggestions}</h2>
         </div>
       </div>
     )
