@@ -4,7 +4,7 @@ import * as firebase from 'firebase'
 import fire from '../fire'
 
 const learn = require('../Images/learn.jpg')
-const kieran = require('../Images/kieran.jpg')
+const learn1 = require('../Images/learn1.jpeg')
 const database = fire.database()
 
 class Blog extends Component {
