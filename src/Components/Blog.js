@@ -12,7 +12,7 @@ class Blog extends Component {
   state = {
     centreArticle: {
       title: 'Blog posts',
-      articleSection1: 'Scroll through the side bar to find articles on an array of technical subjects.'
+      articleSection1: 'Pick from the sidebar to display blog posts on a variety of technical subjects.'
     },
     articles: []
   }

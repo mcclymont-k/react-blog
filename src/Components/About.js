@@ -6,11 +6,6 @@ let tech = require('../Images/tech.gif')
 
 class About extends Component {
 
-  componentDidMount() {
-    setTimeout(() => {
-      document.querySelector('#gif').src = giphy
-    }, 15000)
-  }
   render () {
     return(
       <div className='aboutContainer'>
