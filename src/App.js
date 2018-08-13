@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import {Link, Route, HashRouter as Router} from 'react-router-dom'
+import {Route, HashRouter as Router} from 'react-router-dom'
 import Home from './Components/Home'
-import MenuBar from './Components/MenuBar'
-import Gallery from './Components/Gallery'
 import './App.css';
 
 

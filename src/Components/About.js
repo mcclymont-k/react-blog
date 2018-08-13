@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import '../Css/About.css'
-let kieran = require('../Images/kieran.jpg')
-let giphy = require('../Images/giphy.gif')
 let tech = require('../Images/tech.gif')
 
 class About extends Component {
@@ -19,7 +17,7 @@ class About extends Component {
             machine learning using TensorFlow. Check out my projects below for examples
             of my work.
           </h2>
-          <img id='gif' src={tech}></img>
+          <img id='gif' src={tech} alt='tech gif'></img>
         </div>
       </div>
     )

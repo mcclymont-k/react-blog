@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import '../Css/Blog.css'
-import * as firebase from 'firebase'
 import fire from '../fire'
 
-const learn = require('../Images/learn.jpg')
-const learn1 = require('../Images/learn1.jpeg')
 const database = fire.database()
 
 class Blog extends Component {
@@ -37,7 +34,7 @@ class Blog extends Component {
             ? []
             : this.state.articles.map((article, i) =>
                 <div className='articleBlurb' key={i} onClick={e => this.setState({ centreArticle: article})}>
-                  <img src={eval(article.image1)}></img>
+                  <img src={article.image1} alt='article img'></img>
                   <h1>
                     {article.title}
                   </h1>
@@ -48,9 +45,11 @@ class Blog extends Component {
         <div className='articleReader'>
           <h1>{this.state.centreArticle.title}</h1>
           <h2>{this.state.centreArticle.articleSection1}</h2>
-          <img src={eval(this.state.centreArticle.image1)} alt=''/>
+          {this.state.centreArticle.link
+          ? <a href={this.state.centreArticle.link}><img src={this.state.centreArticle.image1} alt=''/></a>
+          : <img src={this.state.centreArticle.image1} alt=''/>}
           <h2>{this.state.centreArticle.articleSection2}</h2>
-          <img src={eval(this.state.centreArticle.image2)} alt=''/>
+          <img src={this.state.centreArticle.image2} alt=''/>
           <h2>{this.state.centreArticle.articleSection3}</h2>
           <h2>{this.state.centreArticle.suggestions}</h2>
         </div>

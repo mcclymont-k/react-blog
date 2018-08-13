@@ -26,49 +26,49 @@ class Experience extends Component {
         <h1>Frameworks and languages I love using</h1>
         <div className='logoContainer'>
           <div className='individualLogo'>
-            <img className='techLogo' src={jsLogo}/>
+            <img className='techLogo' src={jsLogo} alt='logo'/>
             <h2>JavaScript es8</h2>
           </div>
           <div className='individualLogo'>
-            <img className='techLogo' src={reactLogo}/>
+            <img className='techLogo' src={reactLogo} alt='logo'/>
             <h2>react</h2>
           </div>
           <div className='individualLogo'>
-            <img className='techLogo' src={cssLogo}/>
+            <img className='techLogo' src={cssLogo} alt='logo'/>
             <h2>CSS</h2>
           </div>
           <div className='individualLogo'>
-            <img className='techLogo' src={htmlLogo}/>
+            <img className='techLogo' src={htmlLogo} alt='logo'/>
             <h2>HTML</h2>
           </div>
           <div className='individualLogo'>
-            <img className='techLogo' src={d3Logo}/>
+            <img className='techLogo' src={d3Logo} alt='logo'/>
             <h2>d3</h2>
           </div>
           <div className='individualLogo'>
-            <img className='techLogo' src={vueLogo}/>
+            <img className='techLogo' src={vueLogo} alt='logo'/>
             <h2>Vue.js</h2>
           </div>
           <div className='individualLogo'>
-            <img className='techLogo' src={nodeLogo}/>
+            <img className='techLogo' src={nodeLogo} alt='logo'/>
             <h2>node.js</h2>
           </div>
           <div className='individualLogo'>
-            <img className='techLogo' src={gitLogo}/>
+            <img className='techLogo' src={gitLogo} alt='logo'/>
             <h2>Git</h2>
           </div>
           <div className='individualLogo'>
-            <img className='techLogo' src={tfLogo}/>
+            <img className='techLogo' src={tfLogo} alt='logo'/>
             <h2>TensorFlow</h2>
           </div>
           <div className='individualLogo'>
-            <img className='techLogo' src={pythonLogo}/>
+            <img className='techLogo' src={pythonLogo} alt='logo'/>
             <h2>Python</h2>
           </div>
         </div>
         <div className='projectsContainer'>
           <div className='individualProject' onClick={e => window.location.href = 'https://awesome-lalande-485e6e.netlify.com/'}>
-            <img src={oldGrowthImage} alt='project image'/>
+            <img src={oldGrowthImage} alt='project'/>
             <h1>old growTh</h1>
             <h2>
               old growTh is a website deidcated to educating people on old growth forests.
@@ -82,7 +82,7 @@ class Experience extends Component {
             </h2>
           </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://carey-store.herokuapp.com'}>
-            <img src={careyStoreImage} alt='project image'/>
+            <img src={careyStoreImage} alt='project'/>
             <h1>Creativity by design</h1>
             <h2>
               Creativity by design is a portfolio website for a minnesota based designer.
@@ -93,7 +93,7 @@ class Experience extends Component {
             </h2>
           </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://brainstorm-anon-frontend.herokuapp.com'}>
-            <img src={brainstormImage} alt='project image'/>
+            <img src={brainstormImage} alt='project'/>
             <h1>Brainstorm anon</h1>
             <h2>
               Brainstorm anon is an applciation where people can brainstorm and save their changes to the cloud anonymously.
@@ -105,7 +105,7 @@ class Experience extends Component {
             </h2>
           </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://keen-thompson-275e39.netlify.com'}>
-            <img src={d3Project1Image} alt='project image'/>
+            <img src={d3Project1Image} alt='project'/>
             <h1>d3 data-vistualisation 1</h1>
             <h2>
               This project presents data visulaisation examples using d3. The data
@@ -117,7 +117,7 @@ class Experience extends Component {
             </h2>
           </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://meditation-timer-app.herokuapp.com'}>
-            <img src={meditationAppImage} alt='project image'/>
+            <img src={meditationAppImage} alt='project'/>
             <h1>Meditation Timer</h1>
             <h2>
               Meditation Timer is an application for timing meditation sessions,
@@ -132,7 +132,7 @@ class Experience extends Component {
             </h2>
           </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://d3-graphs.herokuapp.com/'}>
-            <img src={d3Project2Image} alt='project image'/>
+            <img src={d3Project2Image} alt='project'/>
             <h1>d3 data-visualisation 2</h1>
             <h2>
               This project presents data visulaisation examples using d3. It uses

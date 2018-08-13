@@ -36,15 +36,15 @@ class Gallery extends Component {
       <div>
         <div className='mainOverlay' onClick={this.close}>
           <button onClick={this.close} className='imageCloseButton'>Close x</button>
-          <img className='overlayImage' />
+          <img className='overlayImage' alt='overlay'/>
         </div>
         <div className='galleryContainer' >
           {
             // Checking that state has been updated before iterating through the images
             this.state.digits
-            ? this.state.digits.map(([h, v]) =>
-              <div className= {`item  h${h} v${v}`} onClick={this.handleClick}>
-                <img src={require(`../Images/${this.randomNumber(12)}.jpg`)} />
+            ? this.state.digits.map(([h, v], i) =>
+              <div className= {`item  h${h} v${v}`} key={i} onClick={this.handleClick}>
+                <img src={require(`../Images/${this.randomNumber(12)}.jpg`)} alt='gallery'/>
                 <div className='itemOverlay'>
                   <button className="itemOverlayButton">VIEW -></button>
                 </div>
