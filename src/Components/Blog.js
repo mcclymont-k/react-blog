@@ -9,7 +9,7 @@ class Blog extends Component {
   state = {
     centreArticle: {
       title: 'Blog posts',
-      articleSection1: 'Pick from the sidebar to display blog posts on a variety of technical subjects.'
+      articleSection1: 'Select blog posts from the sidebar'
     },
     articles: []
   }
@@ -23,7 +23,7 @@ class Blog extends Component {
       articleKeys.forEach(articleKey => {
         articlesArray.push(articlesData[articleKey])
       })
-      this.setState({articles: articlesArray})
+      this.setState({articles: articlesArray.reverse()})
     })
   }
   render () {

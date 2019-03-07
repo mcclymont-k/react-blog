@@ -39,10 +39,6 @@
   margin: 0
 }
 
-.individualLogo:hover {
-  cursor: pointer
-}
-
 .individualLogo:hover h2 {
   color: white
 }

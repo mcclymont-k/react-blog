@@ -36,7 +36,6 @@ class MenuBar extends Component {
         <div id='about' className='menuBarButton' onClick={this.smoothScroll}>ABOUT</div>
         <div id='experience' className='menuBarButton' onClick={this.smoothScroll}>WORK</div>
         <div id='blog' className='menuBarButton' onClick={this.smoothScroll}>BLOG</div>
-        <div id='gallery' className='menuBarButton' onClick={this.smoothScroll}>GALLERY</div>
         <div id='contact' className='menuBarButton' onClick={this.smoothScroll}>CONTACT</div>
       </div>
     )

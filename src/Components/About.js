@@ -12,10 +12,10 @@ class About extends Component {
           <h1>Kieran McClymont</h1>
           <h2>
             I am a software developer with a broad set of skills and a wide variety of
-            interests. I build functional web applications in React and Vue, I
+            interests. I build functional web applications using javascript, I
             create data visualisations in d3 and I write deep learning models for
-            machine learning using TensorFlow. Check out my projects below for examples
-            of my work.
+            machine learning using PyTorch. Check out my projects below for examples
+            of my work or contact me for more details.
           </h2>
           <img id='gif' src={tech} alt='tech gif'></img>
         </div>
