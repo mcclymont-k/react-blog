@@ -33,7 +33,7 @@ class Home extends Component {
           <h2>
             Please feel free to get in contact.<br/>I am eager to hear about speaking engagements, open source projects and work oppurtunities.
           </h2>
-          <h3>mcclymont.kieran@gmail.com </h3>
+          <h3>mcclymont.kieran@gmail.com</h3>
           <a href="https://twitter.com/KieMccl?ref_src=twsrc%5Etfw"><img className='socialButton' src={require('../Images/twit.png')} alt='social'/></a>
           <a href="https://www.linkedin.com/in/kieran-mcclymont-34039b167/"><img className='socialButton' src={require('../Images/linkedin.png')} alt='insta button'/></a>
           <a href='https://github.com/mcclymont-k'><img className='socialButton' src={require('../Images/github.png')} alt='github'/></a>

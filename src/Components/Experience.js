@@ -16,6 +16,7 @@ const careyStoreImage = require('../Images/careyStore.png')
 const brainstormImage = require('../Images/brainstorm.png')
 const d3Project1Image = require('../Images/d3Project1.png')
 const d3Project2Image = require('../Images/d3Project2.png')
+const mnistImage = require('../Images/mnist_screenshot.png')
 const laravelLogo = require('../Images/laravelLogo.png')
 const meditationAppImage = require('../Images/meditationApp.png')
 
@@ -68,6 +69,17 @@ class Experience extends Component {
           </div>
         </div>
         <div className='projectsContainer'>
+          <div className='individualProject' onClick={e => window.location.href = 'https://wonderful-archimedes-9efd44.netlify.com'}>
+            <img src={mnistImage} alt='project' style={{marginBottom: '10px'}}/>
+            <h1>Digit Predictor</h1>
+            <h2>
+              This project uses canvas to allow the user to draw a digit and runs a machine learnign model to predict the digit<br/><br/>
+              This application uses:<br/>
+              - React, CSS, HTML, D3<br/>
+              - Flask,<br/>
+              - Python and Pytorch,<br/>
+            </h2>
+          </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://keen-thompson-275e39.netlify.com'}>
             <img src={d3Project1Image} alt='project'/>
             <h1>d3 data-vistualisation 1</h1>
@@ -77,7 +89,7 @@ class Experience extends Component {
               different ways.<br/><br/>
               This application uses:<br/>
               - JS, React, HTML, CSS<br/>
-              - d3 data visualisation
+              - D3 data visualisation
             </h2>
           </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://carey-store.herokuapp.com'}>
@@ -87,7 +99,7 @@ class Experience extends Component {
               Creativity by design is a portfolio website for a minnesota based designer.
               It was a  freelance project I continue to maintain.<br/><br/>
               The project uses:<br/>
-              - JS, Vue, HTML, Css<br/>
+              - JS, Vue, HTML, CSS<br/>
               - SquareUp backend, Node and express
             </h2>
           </div>
