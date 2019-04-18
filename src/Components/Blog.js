@@ -7,10 +7,7 @@ const database = fire.database()
 class Blog extends Component {
 
   state = {
-    centreArticle: {
-      title: 'Blog posts',
-      articleSection1: 'Select blog posts from the sidebar'
-    },
+    centreArticle: {},
     articles: []
   }
 
@@ -22,9 +19,12 @@ class Blog extends Component {
       let articlesArray = []
       articleKeys.forEach(articleKey => {
         articlesArray.push(articlesData[articleKey])
+      });
+      this.setState({
+        articles: articlesArray.reverse(),
+        centreArticle: articlesArray[0]
       })
-      this.setState({articles: articlesArray.reverse()})
-    })
+    });
   }
   render () {
     return(
@@ -46,8 +46,8 @@ class Blog extends Component {
           <h1>{this.state.centreArticle.title}</h1>
           <h2>{this.state.centreArticle.articleSection1}</h2>
           {this.state.centreArticle.link
-          ? <a href={this.state.centreArticle.link}><img src={this.state.centreArticle.image1} alt=''/></a>
-          : <img src={this.state.centreArticle.image1} alt=''/>}
+            ? <a href={this.state.centreArticle.link}><img src={this.state.centreArticle.image1} alt=''/></a>
+            : <img src={this.state.centreArticle.image1} alt=''/>}
           <h2>{this.state.centreArticle.articleSection2}</h2>
           <img src={this.state.centreArticle.image2} alt=''/>
           <h2>{this.state.centreArticle.articleSection3}</h2>
