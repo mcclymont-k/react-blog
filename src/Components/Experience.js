@@ -19,6 +19,7 @@ const mnistImage = require('../Images/mnist_screenshot.png')
 const laravelLogo = require('../Images/laravelLogo.png')
 const meditationAppImage = require('../Images/meditationApp.png')
 const talemImage = require('../Images/talemImage.jpg')
+const mandlebrotImage = require('../Images/mandlebrotImage.png')
 
 
 class Experience extends Component {
@@ -102,6 +103,16 @@ class Experience extends Component {
               This application uses:<br/>
               - JS, React, HTML, CSS<br/>
               - D3 data visualisation
+            </h2>
+          </div>
+          <div className='individualProject' onClick={e => window.location.href = 'https://nostalgic-franklin-aa4d94.netlify.com'}>
+            <img src={mandlebrotImage} alt='project'/>
+            <h1>Mandlebrot</h1>
+            <h2>
+              A generative art piece using Mandlebrot and a selection of random generative patterns.<br/><br/>
+              The project uses:<br/>
+              - JS, Rect, HTML, CSS<br/>
+              - Canvas
             </h2>
           </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://carey-store.herokuapp.com'}>
