@@ -11,7 +11,6 @@ const nodeLogo = require('../Images/node.png')
 const pytorchLogo = require('../Images/pytorchLogo.png')
 const vueLogo = require('../Images/vue.png')
 const pythonLogo = require('../Images/python.png')
-const oldGrowthImage = require('../Images/oldGrowth.png')
 const careyStoreImage = require('../Images/careyStore.png')
 const brainstormImage = require('../Images/brainstorm.png')
 const d3Project1Image = require('../Images/d3Project1.png')
@@ -19,6 +18,7 @@ const d3Project2Image = require('../Images/d3Project2.png')
 const mnistImage = require('../Images/mnist_screenshot.png')
 const laravelLogo = require('../Images/laravelLogo.png')
 const meditationAppImage = require('../Images/meditationApp.png')
+const talemImage = require('../Images/talemImage.jpg')
 
 
 class Experience extends Component {
@@ -80,6 +80,18 @@ class Experience extends Component {
               - Python and Pytorch,<br/>
             </h2>
           </div>
+          <div className='individualProject' onClick={e => window.location.href = 'https://talemhealthanalytics.com'}>
+            <img src={talemImage} alt='project' style={{marginBottom: '10px'}}/>
+            <h1>Talem Health Analytics</h1>
+            <h2>
+              In this project I work as a full stack developer building the front end in Vue.js and the back end in Laravel. My role also involves building
+              machine learning models in python using pytorch<br/><br/>
+              This application uses:<br/>
+              - Vue, CSS, HTML, Chart.js<br/>
+              - Python, Pytorch,<br/>
+              - AWS ec2, s3, Lambda, Sagemaker<br/>
+            </h2>
+          </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://keen-thompson-275e39.netlify.com'}>
             <img src={d3Project1Image} alt='project'/>
             <h1>d3 data-vistualisation 1</h1>
@@ -113,20 +125,6 @@ class Experience extends Component {
               - JS, Vue.js, HTML, CSS <br/>
               - Node.js with express<br/>
               - MongoDB and mongoose
-            </h2>
-          </div>
-          <div className='individualProject' onClick={e => window.location.href = 'https://awesome-lalande-485e6e.netlify.com/'}>
-            <img src={oldGrowthImage} alt='project'/>
-            <h1>old growTh</h1>
-            <h2>
-              old growTh is a website deidcated to educating people on old growth forests.
-              It provides information, educational content and DIY help on building your
-              own small scale forest.<br/><br/>
-              The project uses:<br/>
-              - JS, React, HTML, CSS<br/>
-              - Redux for state management<br/>
-              - d3 data visulaisation<br/>
-              - Firebase as the serverless database
             </h2>
           </div>
           <div className='individualProject' onClick={e => window.location.href = 'https://meditation-timer-app.herokuapp.com'}>
